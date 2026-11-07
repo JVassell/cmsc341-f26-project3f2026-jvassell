@@ -33,18 +33,18 @@ bool Hospital::insertPatient(const Patient& patient) {
     //NEED IMPLEMENTATION
 }
 
-int Hospital::numPatients() const
-{
-    //NEED IMPLEMENTATION
+int Hospital::numPatients() const {
+    return m_size;
 }
 prifn_t Hospital::getPriorityFn() const {
-    //NEED IMPLEMENTATION
+    return m_priorFunc;
 }
 Patient Hospital::getNextPatient() {
-    //NEED IMPLEMENTATION
+   //NEED IMPLEMENTATION
 }
 void Hospital::setPriorityFn(prifn_t priFn, HEAPTYPE heapType) {
-   //NEED IMPLEMENTATION               
+   m_priorFunc = priFn;
+   m_heapType = heapType;             
 }
 void Hospital::setStructure(STRUCTURE structure){
     m_structure = structure;   
